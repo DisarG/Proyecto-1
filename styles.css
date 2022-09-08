@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+}
+#back {
+    background-color: rgb(11, 170, 162);
+    background-image: url(https://delvecino.com/wp-content/uploads/2021/03/hoteles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.texto {
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#head {
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(130, 184, 209);;
+    
+}
+#title{
+    color: rgb(62, 12, 109);
+}
+
+#links{
+
+    margin-top: 10px;
+    margin-left: 45%;
+}
+
+a{
+    padding-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+#pie {
+    background-color: rgb(130, 184, 209);
+    height: 4rem;
+    
+}
+
+.iconos {
+    width: 50px;
+    padding-left: 30px;
+}
+
+#iconos {
+    margin: 16%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-nosotros{
+    color: black;
+    font-size: 18px;
+    padding: 2% 15%;
+}
+
+.nosotros-title{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: lightblue;
+    color: rgb(62, 12, 109);
+}
+
+main{
+    min-height: calc(100% - 8.2rem);
+}
+#nosotrosMain {
+    background-color: aquamarine;
+}
+#nosotrosImagen {
+    margin: 10px 25%;
+}
