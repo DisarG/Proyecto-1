@@ -87,20 +87,28 @@ main{
 #nosotrosMain {
     background-color: aquamarine;
 }
+
 #nosotrosImagen {
-    margin: 20px 25%;
+    width: 500px;
+    display: block;
+    margin: 0px auto;
 }
+
 .title-habitacion{
     color: rgb(62, 12, 109);
     background-color: lightblue;
     text-align: center;
 }
 
+.back-habitaciones{
+    background-color: aquamarine;
+}
+
 #galeria{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: aquamarine;
+
 
 }
 .fotosDeHabitaciones{
@@ -111,6 +119,9 @@ main{
 
 
 }
+
+
+
 .contenedorDeFoto{
     min-height: calc(100% - 8.2rem);
 }
