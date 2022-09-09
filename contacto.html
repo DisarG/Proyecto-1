@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Contacto</title>
-</head>
-<body>
-    <header id="head">
-        <h1 id="title">THE PARADISE</h1> 
-        <div id="links">
-            <a href="index.html">Home</a>
-            <a href="nosotros.html">Sobre Nosotros</a>
-            <a href="habitaciones.html">Habitaciones</a>
-            <a href="contacto.html">Contacto</a>
-        </div>
-    </header>
-    <main>
-
-    </main>
-    <footer id="pie">
-        <h3 class="texto">© 2022 Todos los derechos reservados: THE PARAIDESE</h3>
-        <a class="texto" href="contacto.html">Sobre nosotros</a>
-        <a class="texto" href="contacto.html" >Contacto</a>
-    </footer>
-</body>
-</html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Contacto</title>
+     </head>
+     <body>
+        <header id="head">
+            <h1 id="title">THE PARADISE</h1> 
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="nosotros.html">Sobre Nosotros</a>
+                <a href="habitaciones.html">Habitaciones</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </header>
+        <h1 class="title-form">Formulario de contacto</h1>
+        <main>
+        <form name="form" class="formulario">
+            <label for="lname">Nombre</label>
+            <input class="inputs" type="text" name="nombre" placeholder="El nombre">
+            <label for="lname">Correo</label>
+            <input class="inputs" type="email" name="Correo" placeholder="ingresa tu correo">
+            <label for="lname">Asunto</label>
+            <input class="inputs" type="text" name="Asunto" placeholder="Escribe un asunto">
+            <label for="lname">Mensaje</label>
+            <input class="inputs" id="mensaje" type="text" name="Mensaje" placeholder="Escribe un mensaje que quieras dejar">
+            <button class="btn-contacto" type="button" onclick="pasatext()" value="enviar texto">Enviar Formulario</button>
+        </form>
+        </main>
+        <footer id="pie">
+            <h3 class="texto">© 2022 Todos los derechos reservados: THE PARAIDESE</h3>
+            <a class="texto" href="nosotros.html">Sobre nosotros</a>
+            <a class="texto" href="contacto.html" >Contacto</a>
+        </footer>
+            <script language="javascript">
+            function pasatext(){
+            window.open('gracias.html','winpop','');
+            }
+            </script>
+     </body>
+     </html>
