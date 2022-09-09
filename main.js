@@ -16,20 +16,26 @@ habitaciones[9] = [URL= 'https://images.trvl-media.com/hotels/1000000/800000/795
 
 if(img_habitaciones){
 for (i=0;1<habitaciones.length;i++) {
-    let creaDiv = document.createElement(`div`);
+    let creaDiv = document.createElement("div");
     let creaimg = document.createElement(`img`);
-
-
-
+    let parrafo = document.createElement("p");
 
     creaDiv.setAttribute('class', 'contenedorDeFoto');
     creaDiv.innerHTML = habitaciones[i][1];
     creaimg.setAttribute('class', 'fotosDeHabitaciones');
-    
     creaimg.setAttribute('src', habitaciones[i][0]);
-    img_habitaciones.appendChild(creaDiv);
-    img_habitaciones.appendChild(creaimg);
+    parrafo.setAttribute("class", "textohabitaciones");
 
+    const app = document.querySelector("#galeria"); 
+    app.insertAdjacentElement("afterbegin", creaDiv);
 
+    const apptwo = document.querySelector(".contenedorDeFoto");
+    apptwo.insertAdjacentElement("beforeend", creaimg)
+    
+    const appthree = document.querySelector(".contenedorDeFoto");
+    appthree.insertAdjacentElement("beforeend", parrafo);
+    
 }
 }
+
+
