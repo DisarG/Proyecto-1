@@ -32,10 +32,11 @@ html, body {
 }
 
 #links{
-
     margin-top: 10px;
     margin-left: 45%;
 }
+
+
 
 a{
     padding-right: 30px;
@@ -44,6 +45,11 @@ a{
     font-size: 17px;
 }
 
+a:hover{
+    color: bisque;
+}
+
+
 #pie {
     background-color: rgb(130, 184, 209);
     height: 4rem;
@@ -51,7 +57,7 @@ a{
 }
 
 .iconos {
-    width: 100px;
+    width: 90px;
     padding-left: 30px;
 }
 
@@ -94,15 +100,18 @@ main{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: aquamarine;
 
 }
 .fotosDeHabitaciones{
     width: 250px;
     height: 250px;
-    padding-top: 50px;
+    padding: 15px 10px;
+    margin: 10px 0px 10px 0px;
+
+
 }
 .contenedorDeFoto{
-    display: flex;
-    justify-content: space-around;
     min-height: calc(100% - 8.2rem);
 }
+
