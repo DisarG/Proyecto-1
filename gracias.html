@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Agradecimiento</title>
 </head>
-<body>
+<body id="body-gracias">
+    <header id="head">
+        <h1 id="title">THE PARADISE</h1> 
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
+            <a href="habitaciones.html">Habitaciones</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </header>
+
+    <h1 class="title-form">Gracias por llenar el formulario</h1>
+    
     <SCRIPT language="javascript">
-        document.write('Nombre: <input type="text" name="nombre" class="input-gracias" value="'+opener.document.form.nombre.value+'">',
-        'Correo: <input type="email" name="Correo" class="input-gracias" value="'+opener.document.form.Correo.value+'">'
-        );
+        document.write('<h1 class="title-gracias">Tu nombre: <input type="text" name="nombre" class="input-gracias" disable readonly="true" value="'+opener.document.form.nombre.value+'"></h1>');
     </SCRIPT>
 </body>
 </html>
