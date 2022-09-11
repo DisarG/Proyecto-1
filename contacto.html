@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <title>Contacto</title>
+        <title>Document</title>
      </head>
      <body>
         <header id="head">
@@ -17,29 +17,25 @@
                 <a href="contacto.html">Contacto</a>
             </div>
         </header>
+        <h1 class="title-form">Formulario de contacto</h1>
         <main class="main-contacto">
-            <h1 class="title-form">Formulario de contacto</h1>
-            <form name="form" class="formulario" id="formulario">
-                <label for="lname">Nombre:</label>
-                <input id="user" class="inputs" type="text" name="nombre" placeholder="Ingresa tu nombre" >
-                <label for="lname">Correo:</label>
-                <input class="inputs" type="email" name="Correo" placeholder="ingresa tu correo">
-                <label for="lname">Asunto:</label>
-                <input class="inputs" type="text" name="Asunto" placeholder="Escribe un asunto">
-                <label for="lname">Mensaje:</label>
-                <input class="inputs" id="mensaje" type="text" name="Mensaje" placeholder="Escribe un mensaje que quieras dejar">
-                <button class="btn-contacto" type="button" onclick="pasatext()" value="enviar texto">Enviar Formulario</button>
-            </form>
+        <form name="form" action="gracias.html" method="get" class="formulario">
+            <label for="lname">Nombre:</label>
+            <input id="local" class="inputs" type="text" required name="nombre" minlength="4" placeholder="El nombre">
+            <label for="lname">Correo:</label>
+            <input class="inputs" type="email" name="Correo" required minlength="8" placeholder="ingresa tu correo">
+            <label for="lname">Asunto:</label>
+            <input class="inputs" type="text" name="Asunto" required minlength="4" placeholder="Escribe un asunto">
+            <label for="lname">Mensaje:</label>
+            <input class="inputs" id="mensaje" type="text" name="Mensaje" required minlength="10" placeholder="Escribe un mensaje que quieras dejar">
+            <button class="btn-contacto" type="submit">Enviar Formulario</button>
+        </form>
         </main>
         <footer id="pie">
             <h3 class="texto">© 2022 Todos los derechos reservados: THE PARAIDESE</h3>
             <a class="texto" href="nosotros.html">Sobre nosotros</a>
             <a class="texto" href="contacto.html" >Contacto</a>
         </footer>
-            <script language="javascript">
-                function pasatext(){
-                window.open('gracias.html','winpop','');
-                }
-            </script>
+            <script src="contacto.js">  </script>
      </body>
      </html>

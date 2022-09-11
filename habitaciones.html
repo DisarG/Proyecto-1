@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="habitaciones.js"></script>
     <title>Habitaciones</title>
 </head>
+
 <body>
     <header id="head">
-        <h1 id="title">THE PARADISE</h1> 
+        <h1 id="title">THE PARADISE</h1>
         <div id="links">
             <a href="index.html">Home</a>
             <a href="nosotros.html">Sobre Nosotros</a>
@@ -19,19 +23,80 @@
     </header>
     <main class="back-habitaciones">
         <h1 class="title-habitacion">Habitaciones</h1>
-        <div class="btn">
-            <button type="button" >Cantidad Camas</button>
-            <button type="button" >Baños</button>
-            <button type="button" >Precio por Noche</button>
+        <div class="head-btn">
+
+            <button onclick="Camas()" class="btn">Cantidad de Camas</button>
+            <div id="myDropdown" class="dropdown-content">
+
+                <a type="radio" name="1" class="btn-select" value="2simples" onclick="filterSelectionAll()"
+                    href="#">Mostrar todo</a>
+
+                <a type="radio" name="1" class="btn-select" value="2simples" onclick="filterSelection()" href="#">Cama
+                    King</a>
+
+                <a type="radio" name="1" class="btn-select" value="2dobles" onclick="filterSelection2()" href="#">1 Cama
+                    doble</a>
+
+                <a type="radio" name="1" class="btn-select" value="1doble" onclick="filterSelection3()" href="#">2 Camas
+                    simples</a>
+
+            </div>
+
+            <button onclick="Baños()" class="btn">Baños</button>
+            <div id="baños" class="dropdown-content">
+                <a type="radio" name="1" class="btn-select" value="2simples" onclick="filterSelectionAll()"
+                    href="#">Mostrar todo</a>
+
+                <a type="radio" name="1" class="btn-select" value="2simples" onclick="filterSelectionBaño()" href="#">1
+                    baño</a>
+
+                <a type="radio" name="1" class="btn-select" value="2dobles" onclick="filterSelectionBaños()" href="#">2
+                    baños</a>
+
+
+            </div>
+
+            <button onclick="m2()" class="btn">M4</button>
+            <div id="m2" class="dropdown-content">
+                <a type="radio" name="1" class="btn-select" value="2simples" onclick="filterSelectionAll()"
+                    href="#">Mostrar todo</a>
+
+                <a type="radio" name="1" class="btn-select" value="2simples" onclick="filterSelection()" href="#">1
+                    25m2</a>
+
+                <a type="radio" name="1" class="btn-select" value="2dobles" onclick="filterSelection2()" href="#">2
+                    20m2</a>
+
+                <a type="radio" name="1" class="btn-select" value="2dobles" onclick="filterSelection3()" href="#">2
+                    15m2</a>
+
+
+            </div>
+            
+            <button onclick="Precio()" class="btn">Precio</button>
+            <div id="Precio" class="dropdown-content">
+                <a type="radio" name="1" class="btn-select" value="2simples" onclick="filterSelectionAll()"
+                    href="#">Mostrar todo</a>
+
+                <a type="radio" name="1" class="btn-select" value="2simples" onclick="filterSelection()"
+                    href="#">Precio por noche $3000</a>
+
+                <a type="radio" name="1" class="btn-select" value="2dobles" onclick="filterSelection2()"
+                    href="#">Precio por noche $2000</a>
+
+                <a type="radio" name="1" class="btn-select" value="1doble" onclick="filterSelection3()"
+                    href="#">Precio por noche $1500</a>
+
+            </div>  
         </div>
-        <div id="galeria">
-        </div>
+        <div id="galeria"></div>
     </main>
     <footer id="pie">
         <h3 class="texto">© 2022 Todos los derechos reservados: THE PARAIDESE</h3>
         <a class="texto" href="nosotros.html">Sobre nosotros</a>
-        <a class="texto" href="contacto.html" >Contacto</a>
+        <a class="texto" href="contacto.html">Contacto</a>
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>

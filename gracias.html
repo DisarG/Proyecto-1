@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Agradecimiento</title>
+    
 </head>
-<body id="body-gracias">
+<body>
     <header id="head">
         <h1 id="title">THE PARADISE</h1> 
         <div id="links">
@@ -17,11 +18,14 @@
             <a href="contacto.html">Contacto</a>
         </div>
     </header>
-
-    <h1 class="title-form">Gracias por llenar el formulario</h1>
-    
-    <SCRIPT language="javascript">
-        document.write('<h1 class="title-gracias">Tu nombre: <input type="text" name="nombre" class="input-gracias" disable readonly="true" value="'+opener.document.form.nombre.value+'"></h1>');
-    </SCRIPT>
+    <main id="body-gracias">
+    <h2 class="title-gracias">Gracias <span id="agradecimiento"></span> por enviarnos tu contacto</h2>
+    </main>
+    <footer id="pie">
+        <h3 class="texto">© 2022 Todos los derechos reservados: THE PARAIDESE</h3>
+        <a class="texto" href="nosotros.html">Sobre nosotros</a>
+        <a class="texto" href="contacto.html" >Contacto</a>
+    </footer>
+    <script src="contacto.js">  </script>
 </body>
 </html>

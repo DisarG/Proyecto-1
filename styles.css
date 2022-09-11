@@ -2,88 +2,102 @@
 
 /*en esta parte estamos llamando a la pagina en general y diciendo que los elementos de la misma no tengan margen ni relleno 
 ademas de que el box-sizing: border-box hace que el borde y el relleno se incluyan en el ancho y altura*/
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 /*aca dice que el body ocupe el 100% del alto de la pantalla*/
-html, body {
+html,
+body {
     height: 100%;
 }
+
 /*aca le damos relleno arriba y abajo a la cabecera, le ponemos el color de fondo estilo gradiant y pocicionamos los elementos*/
 #head {
-    padding: 15px 0px ;
+    padding: 15px 0px;
     display: flex;
     justify-content: space-around;
     background: hsla(0, 0%, 14%, 1);
     background: linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 43%, 1) 40%, hsla(0, 0%, 40%, 1) 60%, hsla(0, 0%, 14%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 43%, 1) 40%, hsla(0, 0%, 40%, 1) 60%, hsla(0, 0%, 14%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 43%, 1) 40%, hsla(0, 0%, 40%, 1) 60%, hsla(0, 0%, 14%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#242424", endColorstr="#6E6E6E", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#242424", endColorstr="#6E6E6E", GradientType=1);
 }
+
 /*le damos un color al titulo llamandolo desde el id*/
-#title{
+#title {
     color: whitesmoke;
 }
+
 /*atravez de un id le damos un margen izquierdo y superior al contenedor de los enlaces a las otras paginas*/
-#links{
+#links {
     margin-top: 10px;
     margin-left: 45%;
 }
+
 /*llamamos a los enlaces y le damos un relleno izquierdo, le quitamos la linea de abajo y le damos color y tamaño a la letra*/
-a{
+a {
     padding-right: 30px;
     text-decoration: none;
     color: whitesmoke;
     font-size: 17px;
 }
+
 /*los enlaces cambian de color al pasar el cursor sobre ellos*/
-a:hover{
+a:hover {
     color: rgb(38, 183, 219);
 }
-/*hace que el main ocupe el 100% del espaciosobrante de la pantalla*/
-main{
-    min-height: calc(100% - 8.2rem);
+
+/*hace que el main ocupe el 100% del espacio sobrante de la pantalla*/
+main {
+    min-height: calc(100% - 8.16rem);
 }
+
 /*llamamos al main del home por su id, le ponemos una imagen de fondo que no se repita*/
 #back {
     background-image: url(https://delvecino.com/wp-content/uploads/2021/03/hoteles.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /*desde de la clase le damos margen 0, color y pocicionamiento al titulo y a los textos del pie de pagina*/
 .texto {
     color: whitesmoke;
     margin: 0px;
     display: flex;
     justify-content: space-around;
-    
+
 }
+
 /*le damos margen y pocicionamos el contenedor de las redes atravez del id*/
 #iconos {
     margin: 16%;
     display: flex;
     justify-content: center;
 }
+
 /*le damos un ancho y un relleno izquierdo a los iconos de redes atravez de la clase*/
 .iconos {
     width: 90px;
     padding-left: 30px;
 }
+
 /*modifica el ancho y el relleno de los iconos de redes al pasar el cursor sobre ellos atravez de la clase*/
-.iconos:hover{
+.iconos:hover {
     width: 120px;
     padding-left: 30px;
 }
-/*le damos una altura y color al pie de pagina atravez del id*/
+
+/*le damos una altura y color de fondo al pie de pagina atravez del id*/
 #pie {
     background: hsla(0, 0%, 14%, 1);
     background: linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 43%, 1) 40%, hsla(0, 0%, 40%, 1) 60%, hsla(0, 0%, 14%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 43%, 1) 40%, hsla(0, 0%, 40%, 1) 60%, hsla(0, 0%, 14%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 43%, 1) 40%, hsla(0, 0%, 40%, 1) 60%, hsla(0, 0%, 14%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#242424", endColorstr="#6E6E6E", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#242424", endColorstr="#6E6E6E", GradientType=1);
     height: 4rem;
 }
 
@@ -93,8 +107,9 @@ main{
 #nosotrosMain {
     background-color: #585858;
 }
+
 /*le da un color de fondo, color de letra, pocisionamiento, relleno y margen a el titulo de nosotros atravez de la clase*/
-.nosotros-title{
+.nosotros-title {
     display: flex;
     justify-content: center;
     margin: 0px;
@@ -104,17 +119,19 @@ main{
     background: linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 33%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 33%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 33%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#242424", endColorstr="#545454", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#242424", endColorstr="#545454", GradientType=1);
     color: whitesmoke;
 }
+
 /*le da un ancho, margen y pocicionamiento a la imagen de nosotros atravez de un id*/
 #nosotrosImagen {
     width: 500px;
     display: block;
     margin: 0px auto;
 }
+
 /*le da color y tamaño a la letra, ademas de un relleno al parrafo de nosotros atravez de una clase*/
-.text-nosotros{
+.text-nosotros {
     color: whitesmoke;
     font-size: 18px;
     padding: 2% 15%;
@@ -122,153 +139,221 @@ main{
 
 /*habitaciones*/
 
+/* Head BTN selectores */
+
+.head-btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Le da color de fondo y letra, relleno, que tenga formato redondeado en las esquinas, que no tenga borde, tamaño de letra y que el cursor sea puntero a los botones de filtrado */
+.btn {
+    background-color: whitesmoke;
+    color: black;
+    padding: 16px;
+    border-radius: 10px;
+    max-height: 45px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+/*le cambia el color de letra al pasar el cursor sobre los botones de filtrado*/
+.btn:hover {
+    background-color: #111111;
+    color: rgb(255, 255, 255);
+}
+/*oculta los elementos a dentro del div, los pociciona, le da ancho*/
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 230px;
+    overflow: auto;
+    z-index: 1;
+}
+/*cuando seleccionas una elemento a tenga un color de fondo y margen, borde redondeado de color negro de tipo solido y de un pixel de grosor*/
+.btn-select {
+    background-color: #b8b8b8;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 3px;
+}
+/*cuando pasas el cursor sobre un elemento a le cambia el color de fondo, letra y borde*/
+.btn-select:hover {
+    background-color: #585858;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+/*le da color de letra, relleno, que el texto no tenga decoracion*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none; 
+    display: block;
+}
+/*le cambia el color de fondo a los elementos a cuando pasa el cursor*/
+.dropdown a:hover {
+    background-color: #ddd;
+}
+/*para mostrar el menu desplegable*/
+.show {
+    display: block;
+}
+
+
 /*le da color de fondo al main de habitaciones atravez de una clase*/
-.back-habitaciones{
+.back-habitaciones {
     background-color: #585858;
 }
+
 /*le da color a la letra y al fondo, le da un relleno y centra el titulo de habitaciones atravez de una clase*/
-.title-habitacion{
+.title-habitacion {
     color: whitesmoke;
     background: hsla(0, 0%, 14%, 1);
 
     background: linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 33%, 1) 100%);
-    
+
     background: -moz-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 33%, 1) 100%);
-    
+
     background: -webkit-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 33%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#242424", endColorstr="#545454", GradientType=1 );
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#242424", endColorstr="#545454", GradientType=1);
     text-align: center;
     padding: 10px;
 }
+
 /*pocisiona los botones que hay en el div de habitaciones atravez de una clase*/
-.btn{
+.btn {
     display: flex;
     justify-content: space-around;
 }
+
 /*modifica el pocicionamiento del contenedor que contiene las tarjetas en habitaciones atravez de un id*/
-#galeria{
+#galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
+
 /*modifica el color de fondo y de letra, el margen, la altura y ancho de las tarjetas de habitaciones atravez de una clase*/
-.contenedorDeFoto{ 
+.contenedorDeFoto {
     background-color: #173044;
     width: 300px;
     min-height: calc(100% - 8.2rem);
     margin: 10px 15%;
     color: whitesmoke;
 }
+
 /*modifica el color de fondo, borde y alturade la tarjeta al pasar el cursor */
-.contenedorDeFoto:hover{
+.contenedorDeFoto:hover {
     background-color: rgb(85, 98, 100);
     border: 2px solid #a1a1a1;
     height: 360px;
 }
+
 /*le da ancho y altura, un margen y le quita los bordes a la imagenes atravez de una clase*/
-.fotosDeHabitaciones{
+.fotosDeHabitaciones {
     width: 250px;
     height: 250px;
     margin-left: 23px;
     border: none;
 
 }
+
 /*le da margen y tamaño de letra a los parrafos atravez de una clase*/
-.text-parrafos{
+.text-parrafos {
     margin-left: 21px;
     font-size: 18px;
 }
 
 /* Formulario */
 
-/*le da un color de fondo al main de contacto atravez de una clase*/
-.main-contacto{
-    background-color:#585858;
+/*le da un color de fondo y altura al main de contacto atravez de una clase*/
+.main-contacto {
+    background-color: #585858;
+    min-height: calc(100%-8.2rem);
 }
-/*le da color de fondo y letra al titulo, lo centra, le da margen y relleno atravez de una clase*/
-.title-form{
-    margin-bottom: 50px;
+
+/*le da color de fondo y letra al titulo, lo centra, le da relleno atravez de una clase*/
+.title-form {
     padding: 10px;
     color: whitesmoke;
     background: hsla(0, 0%, 14%, 1);
 
     background: linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 33%, 1) 100%);
-    
+
     background: -moz-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 33%, 1) 100%);
-    
+
     background: -webkit-linear-gradient(90deg, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 33%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#242424", endColorstr="#545454", GradientType=1 );
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#242424", endColorstr="#545454", GradientType=1);
 
     text-align: center;
 }
-/*le da un ancho, un margen y pociciona el formulario atravez de una clase*/
+
+/*le da un ancho y relleno, un margen y pociciona el formulario atravez de una clase*/
 .formulario {
-    display: grid;
-    justify-content: center;   
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
     width: 600px;
-    margin-left: 360px;
 }
-/*le da un color y estilo de letra a los labels de los formularios */
-label{
+
+/*le da color y estilo de letra y un margen a los labels de los formularios */
+label {
     color: whitesmoke;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 440px;
 }
-/*le da un borde redondeado, un margen y relleno, color de fondo y de letra a los inputs atravez de una clase*/
-.inputs{
+
+/*le da un borde redondeado, un margen y relleno, color de fondo y de letra, ancho, y hace una transision al seleccionar ese input atravez de una clase*/
+.inputs {
     border-radius: 10px;
     padding: 10px;
-    margin: 10px;   
+    margin: 10px;
+    width: 500px;
     color: aliceblue;
     background-color: #242424;
+    border: 5px ridge wheat;
+    transition: .9s ease all;
 }
-/*le da un relleno y ancho al input de mensaje atravez de un id*/
-#mensaje {
-    padding-right: 100px;
-    width: 500px;
-    
+
+/*le cambia el color de borde y sombra al input que se haya seleccionado*/
+.inputs:focus {
+    border: 5px solid skyblue;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0);
 }
-/*le da color y tamaño a la letra, color al fondo, relleno y margen, ancho y borde redondeado al boton de enviar atravez de una clase */
-.btn-contacto{
+
+/*le da color y tamaño a la letra, color al fondo, relleno y margen, ancho y borde redondeado y pocicionamiento al boton de enviar atravez de una clase */
+.btn-contacto {
     color: whitesmoke;
     font-size: 18px;
-    margin-top: 30px;
-    margin-bottom: 30px;
     background: #242424;
-    padding: 10px;
     border-radius: 10px;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 200px;
-    margin-left: 150px;
 }
 
 /*Agradecimiento*/
 
-/*le da color de fondo al body atravez de un id*/
-#body-gracias{
+/*le da color de fondo y altura al body atravez de un id*/
+#body-gracias {
     background-color: #5c5c5c;
+    min-height: calc(100% - 8.2rem);
 }
-/*le da color y tamaño a la letra y margen al titulo*/
-.title-gracias{
+
+/*le da color y tamaño a la letra, margen y pociciona el texto del titulo*/
+.title-gracias {
     font-size: 50px;
-    margin-top: 200px;
-    margin-left: 450px;
+    text-align: center;
+    padding: 18% 0px;
     color: whitesmoke;
-}
-/*hace que el cursor no cambie al pasar por el titulo de agradecimiento*/
-.title-gracias:hover{
-    cursor: default;
-}
-/*pone un color de fondo y letra, sin decoracion ni borde en el texto y le da un tamaño a la letra en el mensaje de agradecimiento*/
-.input-gracias{
-    font-size: 50px;
-    border: none;
-    color: whitesmoke;
-    background-color: #5c5c5c;
-    text-decoration: none;
-    
-}
-/*hace que el cursor no cambie al pasar por el mensaje de agradecimiento*/
-.input-gracias:hover{
-    cursor: default;
 }
