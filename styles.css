@@ -344,11 +344,6 @@ label {
 
 /*Agradecimiento*/
 
-/*le da color de fondo y altura al body atravez de un id*/
-#body-gracias {
-    background-color: #5c5c5c;
-    min-height: calc(100% - 8.2rem);
-}
 
 /*le da color y tamaño a la letra, margen y pociciona el texto del titulo*/
 .title-gracias {
