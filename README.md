@@ -37,6 +37,6 @@ Tiene una validación especial en la parte del Correo que valida el correo.
 ## Expresiones de Gratitud Con el Equipo 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Invita un café ☕ a alguien del equipo. 
+* Invita un café ☕ a alguien del equipo.
 
 ---
